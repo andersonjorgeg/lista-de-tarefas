@@ -56,6 +56,12 @@ export const Container = styled.div`
    -webkit-border-radius: 5px;
    -moz-border-radius: 5px;
    border-radius: 5px;
-   text-decoration: none;
+   text-decoration: none; 
+}
+@media screen and (max-width: 380px) {
+  button {
+    font-size: 10px;
+    padding: 10px;
+  }
 }
 `;
