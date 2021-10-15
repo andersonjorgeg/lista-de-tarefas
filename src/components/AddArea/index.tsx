@@ -14,6 +14,12 @@ export const AddArea = ({ onEnter }: Props) => {
       setInputText('');
     }
   }
+  const handlerClick = () => {
+    if(inputText !== '') {
+      onEnter(inputText);
+      setInputText('');
+    }
+  }
 
   return (
     <C.Container>
@@ -25,6 +31,7 @@ export const AddArea = ({ onEnter }: Props) => {
         onChange={e => setInputText(e.target.value)}
         onKeyUp={handleKeyUp}
       />
+      <button onClick={handlerClick}>Enter</button>
     </C.Container>
   )
 }
